@@ -132,6 +132,9 @@ p {
     line-height: 1.6;
     width: 100%;
 }
+li {
+    padding-bottom: .8em;
+}
 div {
     position: relative;
 }
