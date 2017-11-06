@@ -1,192 +1,202 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic|Playfair+Display:900,400);
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400i|Alegreya:400,400i"');
+
+::-moz-selection {
+    color: #fff;
+    background: #c69c6d;
+}
+  
+::selection {
+    color: #fff;
+    background: #c69c6d;
+}
+
+section {
+    max-width: 800px;
+}
+.main-title {
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    font-size: 62px;
+    text-align: center;
+
+    
+    
+}
+
+
+
+.sub-title {
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    font-weight: normal;
+    font-size: 23.94px;
+    text-align: center;
+    font-style: normal;
+}
+
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+
+ 
+body {
+    background-color: #fbfcfc;
+    
+}
+
+
+
 
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-    -webkit-font-feature-settings: 'liga', 'dlig';
-    -moz-font-feature-settings: 'liga=1, dlig=1';
-    -moz-font-feature-settings: 'liga', 'dlig';
-    -ms-font-feature-settings: 'liga', 'dlig';
-    -o-font-feature-settings: 'liga', 'dlig';
-    font-feature-settings: 'liga', 'dlig';
-    text-rendering: optimizeLegibility;
-    -moz-font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-.heading {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
+    
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color:#4c4e4d;
 }
 
-.subheading {
-    font-family: 'Playfair Display', serif;
+
+h2, h3, h4 {
+    font-family: 'Alegreya';
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 
-
-h3.heading {
-    line-height: 1.4;
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  line-height: 1.45;
+  font-size: 1.125em;
 }
 
-/** 
-    * Quiet Cry
-    * https://color.adobe.com/Quiet-Cry-color-theme-124171/
-    */
-.color-5 {
-    color: #EEEFF7;
-}
-.color-4 {
-    color: #92CDCF;
-}
-.color-3 {
-    color: #445878;
-}
-.color-2 {
-    color: #313538;
-}
-.color-1 {
-    color: #1C1D21;
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
-.background-color-5 {
-    background-color: #EEEFF7;
-}
-.background-color-4 {
-    background-color: #92CDCF;
-}
-.background-color-3 {
-    background-color: #445878;
-}
-.background-color-2 {
-    background-color: #313538;
-}
-.background-color-1 {
-    background-color: #1C1D21;
+h1 {
+  font-size: 3.157em;
+  margin-bottom: .65em;
 }
 
-/**
-    * Diatonic Type Scale
-    * http://ty-p.cc/
-    */
-.nonpareille { font-size: 8px; }
-.minion { font-size: 9px; }
-.petit { font-size: 11px; }
-.bourgeois { font-size: 12px; }
-.long-primer { font-size: 13px; }
-.small-pica { font-size: 15px; }
-.pica { font-size: 16px; }
-.english { font-size: 19px; }
-.columbian { font-size: 21px; }
-.great-primer { font-size: 24px; }
-.double-small-pica { font-size: 28px; }
-.double-pica { font-size: 32px; }
-.double-great-primer { font-size: 48px; }
-.canon { font-size: 62px; }
-.five-line-pica { font-size: 80px; }
-.inch { font-size: 96px; }
+h2 {font-size: 2.369em;}
 
-@media screen and (min-width: 30em) {
-.nonpareille-ns { font-size: 8px; }
-.minion-ns { font-size: 9px; }
-.petit-ns { font-size: 11px; }
-.bourgeois-ns { font-size: 12px; }
-.long-primer-ns { font-size: 13px; }
-.small-pica-ns { font-size: 15px; }
-.pica-ns { font-size: 16px; }
-.english-ns { font-size: 19px; }
-.columbian-ns { font-size: 21px; }
-.great-primer-ns { font-size: 24px; }
-.double-small-pica-ns { font-size: 28px; }
-.double-pica-ns { font-size: 32px; }
-.double-great-primer-ns { font-size: 48px; }
-.canon-ns { font-size: 62px; }
-.five-line-pica-ns { font-size: 80px; }
-.inch-ns { font-size: 96px; }
-}
+h3 {font-size: 1.777em;}
 
-a { -webkit-transition: color .4s; transition: color .4s; color: #265C83; }
+h4 {font-size: 1.333em;}
 
-a:link, a:visited { color: #265C83; }
+small, .font_small {font-size: 0.75em;}
 
-a:hover { color: #7FDBFF; }
 
-a:active { -webkit-transition: color .3s; transition: color .3s; color: #007BE6; }
 
-.link { text-decoration: none; }
+
+
+a { -webkit-transition: color .4s; transition: color .4s; color: #5386e4; text-decoration: none; }
+
+a:link, a:visited { color: #5386e4; }
+
+a:hover { color: #ef3e36; }
+
+a:active { -webkit-transition: color .3s; transition: color .3s; color: #ef3e36; }
+
 
 .pure-g > div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.l-box {
-    padding: 2em;
-}
 
 
-p {
-    line-height: 1.6;
-    width: 100%;
-}
-li {
-    padding-bottom: .8em;
-}
-div {
-    position: relative;
-}
 
-.center {
-    height: 50%;
-}
-.text-center {
-    text-align: center;
-}
-#repos .border-box {
-    background-color: #FFFFFF;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-    height: 250px;
-    padding: .5em;
-    margin: 1em;
-}
-
-@media screen and (min-width: 30em) {
-    #repos .border-box {
-        /*border: 1px solid #313538;*/
-        background-color: #FFFFFF;
-        -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-        -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-
-        height: 250px;
-        padding: 1em;
-        margin: 2em;
-    }
-
+h4 {
+    font-family: 'Lato';
+    font-weight: 400;
+    margin-top: 0;
 }
 
 
 
-.border-box p {
-    height: 80px;
+
+ h3::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 8px;
+    background: #60626a;
+    margin: 8px auto 10px auto;
 }
-.border-box h3 {
-    width: 100%;
-    border-bottom: 1px solid #EEEFF7;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+
+*, *:before, *:after {
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-feature-settings: "kern";
+	font-kerning: normal;
 }
 
 img {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
-    -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.1) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+}
+
+.row {
+    width: 100%;
+
+    margin-bottom: 2.6em;
+}
+
+
+@media screen and (min-width: 768px) {
     
+    html, button, input, select, textarea,
+    .pure-g [class *= "pure-u"] {
+      line-height: 1.45;
+      font-size: 1.063em;
     
+    }
+    p {margin-bottom: 1.3em;}
+    
+    h2, h3, h4 {
+      margin: 1.414em 0 0.5em;
+      font-weight: normal;
+      line-height: 1.2;
+    }
+    
+    h1 {
+      font-size: 5.063em;
+    }
+    
+    h2 {font-size: 3.375em;}
+    
+    h3 {font-size: 2.25em;}
+    
+    h4 {font-size: 1.5em;}
+    
+    small, .font_small {font-size: 0.667em;}
+
+    .main-title {
+        margin-top: .75em;
+        font-size: 80px;
+    }
+    .sub-title {
+        font-size: 23.75px;
+    }
+    h4 {
+        margin-top: 0;
+    }
+
 }

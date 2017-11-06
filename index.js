@@ -16,8 +16,8 @@ var toggleClass = function (element, className) {
     element.className = classes.join(" ");
 }
 
-var showRepositories = function(parent, repositories) {
-    for (var i=0; i<repositories.length; i++) {
+var showRepositories = function (parent, repositories) {
+    for (var i = 0; i < repositories.length; i++) {
         var container = document.createElement("div");
         container.className = "pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-3 wow fadeIn";
         var box = document.createElement("div");
@@ -51,7 +51,7 @@ var showRepositories = function(parent, repositories) {
         container.appendChild(box);
         parent.appendChild(container);
     }
-    
+
 
 }
 
@@ -59,12 +59,12 @@ request.open("GET", url, true);
 request.setRequestHeader("Content-Type", "application/json");
 request.onload = function (event) {
     var response = JSON.parse(event.target.response);
-    var repositories = response.filter(function (e) { 
-        return !e.fork && e.description !== null && e.description.length !== 0; 
+    var repositories = response.filter(function (e) {
+        return !e.fork && e.description !== null && e.description.length !== 0;
     }).sort(function (a, b) {
-        return new Date(b.pushed_at) - new Date(a.pushed_at); 
+        return new Date(b.pushed_at) - new Date(a.pushed_at);
     });
     showRepositories(container, repositories);
-    
+
 }
 request.send();
