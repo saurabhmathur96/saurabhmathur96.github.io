@@ -1,19 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500|Lato:400');
-@font-face {
-	font-family: 'Fira Sans SC';
-	src: url('./fonts/firasans-book-webfont.woff') format('woff');
-}
-body {
-    text-rendering: optimizeLegibility; 
-    -webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-strong {
-    font-weight: 500;
-}
+@import url('./fonts.css');
+
+
 
 ::-moz-selection {
     color: #fff;
@@ -29,14 +16,21 @@ section {
     max-width: 800px;
 }
 .main-title {
-    font-weight: 400;
-    font-size: 62px;
     text-align: center;
     
 }
-h1,h3 {
-    font-family: 'Lato', serif;
+h1,h2,h3 {
+    font-family: 'Fira', sans-serif;
+    font-weight: 400;
 }
+
+
+h4 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+
 
 
 
@@ -61,22 +55,25 @@ body {
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     
-  font-family: 'Fira Sans', serif;
-  font-weight: 400;
+  font-family: 'Charter', serif;
+  font-weight: normal; 
   color:#4c4e4d;
+
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
-h2, h3, h4 {
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-  line-height: 1.45;
+  line-height: 1.4;
   font-size: 1.125em;
 }
 
@@ -85,7 +82,6 @@ p {margin-bottom: 1.3em;}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-weight: normal;
   line-height: 1.2;
 }
 
@@ -107,19 +103,29 @@ small, .font_small {font-size: 0.75em;}
 
 
 a { -webkit-transition: color .4s; transition: color .4s; color: #5386e4; text-decoration: none; }
-a, a:link, a:visited { border-bottom: 1px solid #95b5ee;}
+a, a:link, a:visited { 
+   /* border-bottom: 1px solid #95b5ee;*/
+}
 
 
-a:link, a:visited { color: #5386e4; }
+a:link, a:visited {
+    color: #5386e4;
+}
 
-a:hover { color: #ef3e36; }
+a:hover {
+    /*color: #ef3e36;*/
+    border-bottom: 1px solid #95b5ee;
+ }
 
-a:active { -webkit-transition: color .3s; transition: color .3s; color: #ef3e36; }
-a:hover, a:active { border-bottom: 1px solid #f5827d; }
+a:active {
+    border-bottom: 1px solid #95b5ee;
+}
+a:hover, a:active {
+    border-bottom: 1px solid #95b5ee;
+}
 
 small  a, small  a:link, small  a:visited, small  a:hover, small a:active{
-    border: none;
-    font-family: 'Fira Sans SC';
+    font-family: 'Fira Sans SC', sans-serif;
     text-transform: lowercase;
 }
 .pure-g > div {
@@ -129,11 +135,6 @@ small  a, small  a:link, small  a:visited, small  a:hover, small a:active{
 }
 
 
-
-h4 {
-    font-weight: 400;
-    margin-top: 0;
-}
 
 
 
@@ -162,7 +163,6 @@ h4 {
     
     html, button, input, select, textarea,
     .pure-g [class *= "pure-u"] {
-      line-height: 1.45;
       font-size: 1.063em;
     
     }
@@ -170,7 +170,6 @@ h4 {
     
     h2, h3, h4 {
       margin: 1.414em 0 0.5em;
-      line-height: 1.2;
     }
     
     h1 {
@@ -187,7 +186,7 @@ h4 {
 
     .main-title {
         margin-top: .75em;
-        font-size: 80px;
+        
     }
     .sub-title {
         font-size: 23.75px;
