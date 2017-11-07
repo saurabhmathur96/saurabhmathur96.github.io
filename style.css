@@ -32,7 +32,7 @@ section {
     
 }
 h1,h3 {
-    font-family: 'Lato'
+    font-family: 'Lato', serif;
 }
 
 
@@ -58,7 +58,7 @@ body {
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', serif;
   font-weight: 300;
   color:#4c4e4d;
 }
