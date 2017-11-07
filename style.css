@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400i|Alegreya:400,400i"');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,300i|Lato"');
+@font-face {
+	font-family: 'Fira Sans SC';
+	src: url('./fonts/firasans-book-webfont.woff') format('woff');
+}
+body {
+    text-rendering: optimizeLegibility; 
+    -webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 ::-moz-selection {
     color: #fff;
@@ -14,25 +26,15 @@ section {
     max-width: 800px;
 }
 .main-title {
-    font-family: 'Alegreya', serif;
     font-weight: 400;
     font-size: 62px;
     text-align: center;
-
-    
     
 }
-
-
-
-.sub-title {
-    font-family: 'Alegreya', serif;
-    font-weight: 400;
-    font-weight: normal;
-    font-size: 23.94px;
-    text-align: center;
-    font-style: normal;
+h1,h3 {
+    font-family: 'Lato'
 }
+
 
 
 .text-center {
@@ -56,14 +58,13 @@ body {
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
   color:#4c4e4d;
 }
 
 
 h2, h3, h4 {
-    font-family: 'Alegreya';
     font-weight: normal;
     font-style: normal;
 }
@@ -87,7 +88,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 3.157em;
-  margin-bottom: .65em;
+  margin-bottom: .4em;
 }
 
 h2 {font-size: 2.369em;}
@@ -103,14 +104,21 @@ small, .font_small {font-size: 0.75em;}
 
 
 a { -webkit-transition: color .4s; transition: color .4s; color: #5386e4; text-decoration: none; }
+a, a:link, a:visited { border-bottom: 1px solid #95b5ee;}
+
 
 a:link, a:visited { color: #5386e4; }
 
 a:hover { color: #ef3e36; }
 
 a:active { -webkit-transition: color .3s; transition: color .3s; color: #ef3e36; }
+a:hover, a:active { border-bottom: 1px solid #f5827d; }
 
-
+small  a, small  a:link, small  a:visited, small  a:hover, small a:active{
+    border: none;
+    font-family: 'Fira Sans SC';
+    text-transform: lowercase;
+}
 .pure-g > div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -120,8 +128,7 @@ a:active { -webkit-transition: color .3s; transition: color .3s; color: #ef3e36;
 
 
 h4 {
-    font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 0;
 }
 
@@ -138,14 +145,6 @@ h4 {
 }
 
 
-*, *:before, *:after {
-	text-rendering: optimizeLegibility;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	font-feature-settings: "kern";
-	font-kerning: normal;
-}
 
 img {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
@@ -172,7 +171,6 @@ img {
     
     h2, h3, h4 {
       margin: 1.414em 0 0.5em;
-      font-weight: normal;
       line-height: 1.2;
     }
     
