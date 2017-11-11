@@ -49,8 +49,7 @@ h2 {padding-top: 0.2em;
     margin-bottom: 0.3em;
     margin-left: -1em;}
 }
-@media all and (max-width:567px) {
-    
+@media all and (max-width:567px) { 
     section {margin-left: auto; margin-right: auto;max-width: 320px;}
 }
 .pure-img {
