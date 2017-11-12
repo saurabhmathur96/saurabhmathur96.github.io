@@ -1,8 +1,9 @@
 from PIL import Image,ImageEnhance
+import glob
 
+for f in glob.glob('images/*.png'):
+    i = Image.open(f)
 
-i = Image.open('images/digit.png')
+    i = ImageEnhance.Sharpness(i).enhance(1.2)
 
-i = ImageEnhance.Sharpness(i).enhance(2)
-
-i.save('images/digit.png')
+    i.save(f)
