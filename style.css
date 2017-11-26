@@ -1,13 +1,12 @@
 @import url('./fonts.css');
-.main-content{max-width:725px; margin-left: auto; margin-right: auto;}
+#main-content{max-width:725px; margin-left: auto; margin-right: auto;}
 h1,h2{font-family:'Fira', sans-serif;font-weight: 600;}
 .text-center{text-align:center;}
 .text-right{text-align:right;}
 body{background-color:#ffffff;}
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"]{font-family:'Charter', serif;font-weight:normal;color:#000000;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-o-font-smoothing:antialiased;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"]{line-height:1.3;font-size:24px;}
+html, button, input, select, textarea, .pure-g [class *= "pure-u"]{line-height:1.3;font-size:24px;}
 p{margin-bottom:1.3em;}
 h1 {font-size: 2.074em;}
 h2 {font-size: 1.728em;}  
@@ -21,26 +20,17 @@ small a, small a:link, small a:visited, small a:hover, small a:active{font-famil
 h2 {border-top: 2px solid #ddd;}
 .row{width:100%;margin-bottom:2.6em;}
 
-@media all {html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 24px;}}
-@media all and (max-width:800px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 24px;}}
-@media all and (max-width:760px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 23px;}}
-@media all and (max-width:720px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 22px;}}
-@media all and (max-width:680px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 21px;}}
-@media all and (max-width:640px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 20px;}}
-@media all and (max-width:600px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 19px;}}
-@media all and (max-width:560px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 18px;}}
-@media all and (max-width:520px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 17px;}}
-@media all and (max-width:480px){html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {font-size: 16px;}}
+
+@media all {html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 24px;}}
+@media all and (max-width:800px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 24px;}}
+@media all and (max-width:760px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 23px;}}
+@media all and (max-width:720px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 22px;}}
+@media all and (max-width:680px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 21px;}}
+@media all and (max-width:640px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 20px;}}
+@media all and (max-width:600px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 19px;}}
+@media all and (max-width:560px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 18px;}}
+@media all and (max-width:520px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 17px;}}
+@media all and (max-width:480px){html, button, input, select, textarea, .pure-g [class *= "pure-u"] {font-size: 16px;}}
 
 @media all and (min-width:567px) {.text-block {margin-left: 16px;}}
 @media all and (min-width:768px) {

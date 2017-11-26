@@ -31,7 +31,7 @@
 
 <body class="background-color text-color pure-g">
 
-    <div class="pure-u-22-24 pure-u-md-20-24 pure-u-lg-18-24 pure-u-xl-14-24 main-content">
+    <div class="pure-u-22-24 pure-u-md-20-24 pure-u-lg-18-24 pure-u-xl-14-24" id="main-content">
         <section id="intro" class="pure-g">
             <div class="row">
                 <div class="pure-u-1">
@@ -390,6 +390,36 @@
         ga('create', 'UA-56019572-3', 'auto');
         ga('send', 'pageview');
 
+    </script>
+
+    <script>
+        var url = "https://api.github.com/users/saurabhmathur96/repos?sort=pushed&type=owner&created=desc";
+        var request = new (this.XMLHttpRequest || ActiveXObject)('MSXML2.XMLHTTP.3.0');
+		request.open('GET', url, 1);
+		request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+		request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		request.onreadystatechange = function () {
+			if(request.readyState > 3) {
+                var repositories = JSON.parse(request.responseText);
+                var displayed = 0;
+                var html = "<section id=\"repositories\" class=\"pure-g\">" +
+                    "<div class=\"row\"><div class=\"pure-u-1\"><h2>Recent Work</h2></div></div>" +
+                    "<div class=\"row\"><div class=\"pure-u-1\"><ul>";
+                
+                for (var i=0; i<repositories.length && displayed<5; i++) {
+                    if (!repositories[i].fork && repositories[i].name != "saurabhmathur96.github.io") {
+                        html += "<li><p><a href="+repositories[i].html_url+">"+repositories[i].name+"</a>: "+repositories[i].description+"<p></li>";
+                        displayed ++;
+                        console.log(repositories[i])
+                    }
+                }
+                html += "</ul></div></div></section>";
+
+                document.getElementById('main-content').innerHTML += html;
+                
+            }
+		};
+		request.send();
     </script>
 </body>
 
