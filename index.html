@@ -408,7 +408,7 @@
                 
                 for (var i=0; i<repositories.length && displayed<5; i++) {
                     if (!repositories[i].fork && repositories[i].name != "saurabhmathur96.github.io") {
-                        html += "<li><p><a href="+repositories[i].html_url+">"+repositories[i].name+"</a>: "+repositories[i].description+"<p></li>";
+                        html += "<li><p><a href="+repositories[i].html_url+">"+repositories[i].name+"</a>: "+repositories[i].description+"</p></li>";
                         displayed ++;
                         console.log(repositories[i])
                     }
