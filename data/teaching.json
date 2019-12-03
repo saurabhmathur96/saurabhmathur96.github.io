@@ -1,0 +1,27 @@
+[
+	{
+		"title": "Associate Instructor, B551: Elements of AI",
+		"at": "Indiana University, Bloomington",
+		"when": "Fall 2019"
+	},
+	{
+		"title": "Associate Instructor, B456 Image Processing",
+		"at": "Indiana University, Bloomington",
+		"when": "Spring 2019"
+	},
+	{
+		"title": "Workshop on Game Development for the Modern Web",
+		"at": "IEEE Computer Society, VIT Chapter",
+		"when": "2017"
+	},
+	{
+		"title": "Workshop on Python Programming",
+		"at": "IEEE Computer Society, VIT Chapter",
+		"when": "2017"
+	},
+	{
+		"title": "Workshop on C++ Standard Template Library",
+		"at": "IEEE Computer Society, VIT Chapter",
+		"when": "2016"
+	}
+]
