@@ -1,27 +1,44 @@
 [
 	{
-		"title": "Associate Instructor, B551: Elements of AI",
-		"at": "Indiana University, Bloomington",
-		"when": "Fall 2019"
+		"where": "Indiana University, Bloomington",
+		"position": "Associate Instructor",
+		"img": "./images/iu.png",
+		"url": "https://luddy.indiana.edu/",
+		"classes": 
+		[
+			{
+				"title": "B657 - Computer Vision",
+				"when": "Spring 2020"
+			},
+			{
+				"title": "B551 - Elements of AI",
+				"when": "Fall 2019"
+			},
+			{
+				"title": "B456 - Image Processing",
+				"when": "Spring 2019"
+			}
+		]
 	},
 	{
-		"title": "Associate Instructor, B456 Image Processing",
-		"at": "Indiana University, Bloomington",
-		"when": "Spring 2019"
-	},
-	{
-		"title": "Workshop on Game Development for the Modern Web",
-		"at": "IEEE Computer Society, VIT Chapter",
-		"when": "2017"
-	},
-	{
-		"title": "Workshop on Python Programming",
-		"at": "IEEE Computer Society, VIT Chapter",
-		"when": "2017"
-	},
-	{
-		"title": "Workshop on C++ Standard Template Library",
-		"at": "IEEE Computer Society, VIT Chapter",
-		"when": "2016"
+		"where": "IEEE Computer Society, VIT Chapter",
+		"position": "Workshop Instructor",
+		"img": "./images/ieeecsvit.png",
+		"url": "http://www.ieeecsvit.com/",
+		"classes":
+		[
+			{
+				"title": "Game Development with HTML5",
+				"when": "Fall 2016"
+			},
+			{
+				"title": "Python Programming",
+				"when": "Fall 2016"
+			},
+			{
+				"title": "C++ Programming",
+				"when": "Spring 2016"
+			}
+		]
 	}
 ]

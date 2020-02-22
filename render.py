@@ -40,6 +40,18 @@ def render_project(item):
 					"</div>",
 					"</div>"])
 
+def render_teaching(item):
+	return '\n'.join(['<div class="row teaching">',
+					'<div class="col-sm-3 col-8"><img src="%s" class="img-fluid" alt="%s" /></div>' % (item['img'], item['where']),
+					'<div class="col-sm-9">',
+					'<a class="strong" href="%s">%s</a>' % (item["url"], item['where']),
+					'<p>%s</p>' % item['position'],
+					'<ul>',
+					*['<li>%s (%s)</li>' % (c['title'], c['when']) for c in item['classes']],
+					'</ul>'
+					"</div>",
+					"</div>"])
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("template_path")
@@ -55,8 +67,14 @@ research = read_json(research_path)
 research_html = '\n'.join([render_paper(item) for item in research])
 
 
+teaching_path = path.join(args.data_dir, "teaching.json")
+teaching = read_json(teaching_path)
+teaching_html = '\n'.join([render_teaching(item) for item in teaching])
+
 template = open(args.template_path, 'r', encoding="utf8").read()
-html = template.replace("[research_html]", research_html).replace("[projects_html]", projects_html)
+html = template.replace("[research_html]", research_html) \
+				.replace("[projects_html]", projects_html) \
+				.replace("[teaching_html]", teaching_html) \
 
 
 print (html)
