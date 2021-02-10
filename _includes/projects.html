@@ -1,0 +1,18 @@
+<article id="projects">
+	<section>
+		<h2> Projects </h2>
+
+		
+		<div class="row">
+			
+			{% for item in site.projects %}
+			<div class="col-sm-4 col-8 mb-2">
+				<img src="{{ item.image }}" class="img-fluid" alt="{{ item.title }}" />
+				<h3>{{item.title}}</h3>
+				<h4 class="text-muted">{{ item.published_at }}</h4>
+				<p>{{ item.description }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+</article>

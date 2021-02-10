@@ -1,0 +1,199 @@
+---
+---
+@import 'global-overrides';
+@import 'bootstrap/bootstrap';
+
+@import "https://use.typekit.net/dig2gpf.css";
+
+h1,h2,h3,p,nav {
+    text-rendering:optimizeLegibility;
+    font-feature-settings:kern,liga;
+    }
+
+.content {
+    @include make-container;
+    @include make-container-max-widths($container-max-widths, $grid-breakpoints);
+}
+
+
+
+.list {
+    @include make-col-ready;
+    @include media-breakpoint-up(xs) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+        @include make-col(10);
+        @include make-col-offset(1);
+    }
+    @include media-breakpoint-up(lg) {
+        @include make-col(8);
+        @include make-col-offset(2);
+    }
+}
+
+
+h1 {
+    font-size:1.999em;
+}
+
+h1 {font-size: 2.369em;}
+
+h2 {font-size: 1.777em;}
+
+h3 {font-size: 1.333em;}
+
+h4 {font-size: 1em;}
+
+.image-frame {      
+    white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+    display: block;
+    text-align: center;
+    
+}
+
+p {
+    margin-bottom: 0.6rem;
+}
+
+.image-frame-height-adjuster {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+article {
+    @include make-row;
+    margin-top: $spacer*2;
+}
+
+
+
+article:not(:first-child) {
+    margin-top: $spacer;
+}
+
+section {
+    width: 100%;
+}
+#intro {
+    padding-top: $spacer;
+
+    flex-direction: column-reverse;
+    @include media-breakpoint-up(md) {
+      flex-direction: unset;
+    }
+    
+    section {
+        @include media-breakpoint-up(xs) {
+            @include make-col(12);
+        }
+        @include media-breakpoint-up(md) {
+            @include make-col(9);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(8);
+        }
+
+
+        text-align: center;
+        p {
+            text-align: left;
+        }
+        
+
+    }
+
+    aside {
+        @include media-breakpoint-up(xs) {
+            @include make-col(4);
+            @include make-col-offset(4);
+        }
+        
+        @include media-breakpoint-up(md) {
+            @include make-col(3);
+            @include make-col-offset(0);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(4);
+            @include make-col-offset(0);
+        }
+        
+        img {
+            max-width: 206px;
+            width: 100%;
+        }
+    }
+
+    nav {
+        margin-bottom:16px
+    }
+}
+
+#teaching, #work {
+    .list-group-item {
+        border:  none;
+        padding: $spacer*0.25 $spacer;
+        //padding: 0.2rem 0.8rem;
+    }
+    
+    .media {
+        margin-top: $spacer;
+
+        img {
+            max-width: 70px;
+        }
+    }
+
+}
+
+#projects {
+    img {
+        max-width: 140px;
+    }
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+.nav-scroller {
+    
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  
+  .nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .nav-scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+  }

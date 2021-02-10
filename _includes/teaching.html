@@ -1,0 +1,22 @@
+<article id="teaching">
+	<section>
+		<h2>Teaching</h2>
+		<ul class="list-unstyled">
+			{% for item in site.teaching %}
+			<li class="media">
+				<img class="col-2" src="{{ item.org_logo }}" alt="{{ item.org_name }}" />
+				<div class="col-10 media-body">
+					<h3 class="mt-0">{{ item.org_name }}</h3>
+					<h4 class="text-muted">{{ item.position }}</h4>
+
+					<ul class="list-group list-group-flush">
+						{% for course_name in item.courses %}
+						<li class="list-group-item">{{ course_name }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+</article>

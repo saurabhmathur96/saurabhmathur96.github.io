@@ -1,0 +1,122 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Saurabh Mathur
+email: saurabhmathur96@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Portfolio
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: mathursaurabh96
+github_username:  saurabhmathur96
+
+# Build settings
+sass:
+  sass_dir: css
+
+
+
+teaching:
+  - org_logo: "./images/utd.jpg"
+    org_name: "University of Texas, Dallas"
+    position: "Teaching Assistant"
+    courses:
+      - "CS6375 - Machine Learning (Spring 2021)"
+      - "CS4375 - Introduction to Machine Learning (Fall 2020)"
+      - "CS6301 - Software Defined Networking (Fall 2020)"
+  - org_logo: "./images/iu.png"
+    org_name: "Indiana University, Bloomington"
+    position: "Associate Instructor"
+    courses:
+      - "B657 - Computer Vision (Spring 2020)"
+      - "B551 - Elements of AI (Fall 2019)"
+      - "B456 - Image Processing (Spring 2019)"
+
+  - org_logo: "./images/ieeecs.jpeg"
+    org_name: "IEEE Computer Society, VIT Chapter"
+    position: "Workshop Instructor"
+    courses:
+      - "Game Development with HTML5 (Fall 2016)"
+      - "Python Programming (Fall 2016)"
+      - "C++ Programming (Spring 2016)"
+
+work_experience:
+  - org_logo: "./images/snps.png"
+    org_name: "Synopsys, Mountain View"
+    position: "R&D Intern"
+    description: "Developed a neural machine translation system to generate assertions from specifications."
+  - org_logo: "./images/iu.png"
+    org_name: "Indiana University, Bloomington"
+    position: "Research Assistant"
+    description: "Visualized 94,000 geotagged Irish folktales using Bayesian topic models under Prof. Roni Khardon."
+  - org_logo: "./images/msft.png"
+    org_name: "Microsoft, Bangalore"
+    position: "Summer Intern"
+    description: "Built a movie recommendation engine with an error-rate of 0.87 on the Netflix dataset."
+
+projects:
+  - image: "./images/speech2text.png"
+    title: "Speech to text"
+    published_at: "GitHub, 2019"
+    description: "Deep learning based end-to-end speech recognition system"
+  - image: "./images/seg.png"
+    title: "Semantic and Instance Segmentation"
+    published_at: "GitHub, 2019"
+    description: "Deep learning and PGM based image segmentation"
+  - image: "./images/caption.png"
+    title: "Automated Image Captioning System"
+    published_at: "GitHub, 2018"
+    description: "Deep learning based image caption generator to improve accessibility on the web."
+  - image: "./images/vitacademics.png"
+    title: "VITacademics"
+    published_at: "GitHub, 2018"
+    description: "A web-server for mobile applications that streamline access to academic information for students at VIT."
+  - image: "./images/clickbait2.png"
+    title: "Clickbait Detector"
+    published_at: "GitHub, 2018"
+    description: "Detecting clickbait headlines in the wild with 90% accuracy."
+  - image: "./images/movie-recs.png"
+    title: "Movie Recommendation Systems"
+    published_at: "GitHub, 2016"
+    description: "A comparitive study of collaborative filtering algorithms."
+  - image: "./images/gravitas2.png"
+    title: "graVITas, 2016"
+    published_at: "GitHub, 2016"
+    description: "Web-portals for VIT University’s annual technical festival."
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
