@@ -133,7 +133,7 @@ section {
     }
 }
 
-#teaching, #work {
+#teaching, #work  {
     .list-group-item {
         border:  none;
         padding: $spacer*0.25 $spacer;
@@ -150,6 +150,11 @@ section {
 
 }
 
+#research {
+    .list-group-item {
+        border:  none;
+    }
+}
 #projects {
     img {
         max-width: 140px;
