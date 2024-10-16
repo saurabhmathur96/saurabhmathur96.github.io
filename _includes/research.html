@@ -3,7 +3,7 @@
         <h2> Research </h2>
         <p>
             
-            I am interested in problems that involve modeling large amounts of uncertain data. 
+            I am interested in problems that involve combining domain knowledge with pattens learned from noisy and uncertain data. 
         </p>
         <p>
             Before joining UTD, I was a Master&rsquo;s student at <a class="strong" href="https://www.iu.edu/">Indiana
@@ -15,16 +15,19 @@
             As an undergraduate student at <a class="strong" href="http://vit.ac.in/">Vellore Institute of
                 Technology</a>,
             I worked with <a class="strong" href="https://scholar.google.com/citations?user=JM-KG70AAAAJ&hl=en">Prof.
-                Daphne Lopez</a> on deep models for image caption generation and chatbots.
-            <!--My
-                        capstone project was on deep models for image caption generation. I&rsquo;ve interned at <a
-                            class="strong" href="https://www.microsoft.com/en-in">Microsoft, Bangalore</a> and <a
-                            class="strong" href="https://www.synopsys.com/">Synopsys, Mountain View</a>.-->
+                Daphne Lopez</a> on deep models for image caption generation and chatbots. I have interned at <a
+                            class="strong" href="https://www.microsoft.com/en-in">Microsoft, Bangalore</a> during my undergrad and <a
+                            class="strong" href="https://www.synopsys.com/">Synopsys, Mountain View</a> during my masters.
         </p>
 
-        <p>For my publications, see my page on <a href="https://scholar.google.co.in/citations?user=zl-6JPMAAAAJ">Google
-                            Scholar</a>.
-        </p>
+        <div class="row">
+			
+			{% for item in site.publications %}
+			<div class="col-sm-4 col-8 mb-2">
+				<p>{{ item.authors }}. {{ item.title }}. <i>{{ item.venue }}</i></p>
+			</div>
+			{% endfor %}
+		</div>
 
        
     </section>
