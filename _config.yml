@@ -163,7 +163,7 @@ publications:
     authors: "Athresh Karanam*, Saurabh Mathur*, David M. Haas, Predrag Radivojac, Kristian Kersting and Sriraam Natarajan"
 
 projects:
-  - image: "./images/ECMO-CBN-PSB.png
+  - image: "./images/ECMO-CBN-PSB.png"
     title: "Causal Bayesian Network construction for patients on ECMO using Large Language Models"
     published_at: "Pacific Symposium on Biocomputing, 2025"
     description: "Constructing causal graphs to understand the risk of neurological injury for patients on life support by refining an LLM's output using real clinical data and domain knowledge."
