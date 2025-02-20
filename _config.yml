@@ -72,61 +72,90 @@ work_experience:
     description: "Built a movie recommendation engine with an error-rate of 0.87 on the Netflix dataset."
 
 publications:
+  - title: "Human-in-the-loop or AI-in-the-loop? Automate or Collaborate?"
+    venue: "The 39th Annual AAAI Conference on Artificial Intelligence (AAAI) 2025" 
+    pdf: "https://arxiv.org/abs/2412.14232"
+    picture: "./images/HIL-vs-AI2L.png"
+    authors: "Sriraam Natarajan, Saurabh Mathur*, Sahil Sidheekh*, Wolfgang Stammer and Kristian Kersting" 
+    
+  - title: "A Unified Framework for Human-Allied Learning of Probabilistic Circuits"
+    venue: "The 39th Annual AAAI Conference on Artificial Intelligence (AAAI) 2025"
+    pdf: "https://starling.utdallas.edu/assets/pdfs/20_bayesian_learning_of_probabili.pdf"
+    picture: "./images/mathur2023tpm.png"
+    authors: "Athresh Karanam*, Saurabh Mathur*, Sahil Sidheekh* and Sriraam Natarajan"
+    
+  - title: "Credibility-aware Reliable Multi-Modal Fusion Using Probabilistic Circuits"
+    venue: "The 28th International Conference on Artificial Intelligence and Statistics (AISTATS) 2025."
+    picture: "./images/mathur2024dai.png"
+    pdf: "https://arxiv.org/abs/2403.03281"
+    authors: "Sahil Sidheekh*, Pranuthi Tenali*, Saurabh Mathur*, Erik Blasch, Kristian Kersting and Sriraam Natarajan"
+    
   - title: "Modeling multiple adverse pregnancy outcomes: Learning from diverse data sources"
     venue: "The 22nd International Conference in Artificial Intelligence in Medicine (AIME 2024)"
     picture: "./images/mathur2024aime.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/Modeling_multiple_APOs.pdf"
     authors: "Saurabh Mathur,  Veerendra P. Gadekar, Rashika Ramola, Peixin Wang, Ramachandran Thiruvengadam, David M. Haas, Shinjini Bhatnagar, Nitya Wadhwa, Garbhini Study Group, Predrag Radivojac, Himanshu Sinha, Kristian Kersting and Sriraam Natarajan"
+  
   - title: "Knowledge Intensive Learning of Credal Networks"
     picture: "./images/mathur2024uai.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/Credal_Networks.pdf"
     venue: "The 40th Conference on Uncertainty in Artificial Intelligence (UAI 2024)"
     authors: "Saurabh Mathur, Alessandro Antonucci and Sriraam Natarajan"
+  
   - title: "On the Robustness and Reliability of Late Multi-Modal Fusion using Probabilistic Circuits"
     picture: "./images/mathur2024dai.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/Fusion2024.pdf"
     venue: "The 27th International Conference on Information Fusion (FUSION 2024)"
     authors: "Sahil Sidheekh, Pranuthi Tenali*, Saurabh Mathur*, Erik Blasch and Sriraam Natarajan"
+  
   - title: "Credibility-aware Reliable Multi-Modal Fusion Using Probabilistic Circuits"
     venue: "The 2nd Workshop of Deployable AI (DAI) at AAAI 2024"
     picture: "./images/mathur2024dai.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/credibility_dai2024.pdf"
     authors: "Saurabh Mathur, Sahil Sidheekh, Pranuthi Tenali, Erik Blasch, Kristian Kersting and Sriraam Natarajan."
+  
   - title: "Learning Credal Conditional Probability Tables with Qualitative Knowledge"
     venue: "The 2nd Workshop of Deployable AI (DAI) at AAAI 2024"
     pdf: "https://starling.utdallas.edu/assets/pdfs/credal_nets_dai2024.pdf"
     picture: "./images/mathur2024uai.png"
     authors: "Saurabh Mathur, Alessandro Antonucci and Sriraam Natarajan. "
+  
   - title: "Neurologic Statistical Prognostication and Risk Assessment for Kids on Extracorporeal Membrane Oxygenation: Neuro SPARK"
     venue: "ASAIO Journal 2023"
     pdf: "https://journals.lww.com/asaiojournal/abstract/9900/neurologic_statistical_prognostication_and_risk.373.aspx"
     picture: "./images/elso.jpg"
     authors: "Neel Shah, Saurabh Mathur, Prashanth Shanmugham, Xilong Li, Ravi R Thiagarajan, Sriraam Natarajan and Lakshmi Raman."
+  
   - title: "Bayesian Learning of Probabilistic Circuits with Domain Constraints"
     venue: "The Sixth Workshop On Tractable Probabilistic Modeling (TPM) at UAI 2023"
     pdf: "https://starling.utdallas.edu/assets/pdfs/20_bayesian_learning_of_probabili.pdf"
     picture: "./images/mathur2023tpm.png"
     authors: "Athresh Karanam*, Saurabh Mathur*, Sahil Sidheekh* and Sriraam Natarajan."
+  
   - title: "Knowledge Intensive Learning of Cutset Networks"
     pdf: "https://starling.utdallas.edu/assets/pdfs/mathur_uai_23.pdf"
     venue: "The Sixth Workshop On Tractable Probabilistic Modeling (TPM) at UAI 2023"
     picture: "./images/mathur2024uai.png"
     authors: "Saurabh Mathur, Vibhav Gogate and Sriraam Natarajan"
+  
   - title: "Knowledge Intensive Learning of Cutset Networks"
     pdf: "https://starling.utdallas.edu/assets/pdfs/mathur_uai_23.pdf"
     venue: "The 39th Conference on Uncertainty in Artificial Intelligence (UAI 2023)"
     picture: "./images/mathur2024uai.png"
     authors: "Saurabh Mathur, Vibhav Gogate and Sriraam Natarajan"
+ 
   - title: "Exploiting Domain Knowledge as Causal Independencies in Modeling Gestational Diabetes"
     picture: "./images/mathur2023psb.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/GDM_PSB2022.pdf"
     venue: "Pacific Symposium on Biocomputing (PSB 2023)"
     authors: "Saurabh Mathur, Athresh Karanam, Predrag Radivojac, David M. Haas, Kristian Kersting and Sriraam Natarajan"
+  
   - title: "Explaining Deep Tractable Probabilistic Models: The sum-product network case"
     picture: "./images/karanam2022pgm_exspns.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/PGM2022_karanam.pdf"
     venue: "The 11th International Conference on Probabilistic Graphical Models (PGM 2022)"
     authors: "Athresh Karanam*, Saurabh Mathur*, David M. Haas, Predrag Radivojac, Kristian Kersting and Sriraam Natarajan"
+  
   - title: "Explaining Deep Tractable Probabilistic Models: The sum-product network case"
     picture: "./images/karanam2022pgm_exspns.png"
     pdf: "https://starling.utdallas.edu/assets/pdfs/TPM2022_karanam.pdf"
@@ -134,6 +163,10 @@ publications:
     authors: "Athresh Karanam*, Saurabh Mathur*, David M. Haas, Predrag Radivojac, Kristian Kersting and Sriraam Natarajan"
 
 projects:
+  - image: "./images/ECMO-CBN-PSB.png
+    title: "Causal Bayesian Network construction for patients on ECMO using Large Language Models"
+    published_at: "Pacific Symposium on Biocomputing, 2025"
+    description: "Constructing causal graphs to understand the risk of neurological injury for patients on life support by refining an LLM's output using real clinical data and domain knowledge."
   - image: "./images/speech2text.png"
     title: "Speech to text"
     published_at: "GitHub, 2019"
